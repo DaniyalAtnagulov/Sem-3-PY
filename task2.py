@@ -9,47 +9,22 @@
 
 from math import ceil
 
-a=[]
-al=int(input("enter len"))
+def main():
+    my_list=[]
+    ml_l=int(input("enter len"))
 
-for item in range(al):
-    a.append (int(input(f'{item+1}')))
-print(a)
+    for item in range(ml_l):
+        my_list.append (int(input(f'{item+1}')))
+    print(my_list)
 
-na=[]
-for j in range(ceil(al/2)):
-    na.append(a[j]*a[-j-1])
-print(na)
-
-
-
-
+    new_list=[]
+    for j in range(ceil(ml_l/2)):
+        new_list.append(my_list[j]*my_list[-j-1])
+    print(new_list)
+main()
 
 
 
-
-
-
-
-
-
-
-
-
-
-# from math import ceil
-
-# a = []
-# len_ls = int(input('Введите длину списка: '))
-# for item in range(len_ls):
-#     a.append(int(input(f'Введите {item + 1} число: ')))
-# print(a)
-
-# new_arr = []
-# for j in range(ceil(len_ls / 2)):
-#     new_arr.append(a[j] * a[-j - 1])
-
-# print(new_arr)
 
 
 
